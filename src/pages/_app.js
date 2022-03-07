@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   process.env.NODE_ENV === 'production' &&
     useEffect(() => {
       const handleRouteChange = (url) => {
-        window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
+        window.gtag('config', 'UA-72514937-2', {
           page_path: url,
         })
       }
