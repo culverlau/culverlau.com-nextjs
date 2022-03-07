@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
+import Layout from '../src/components/Layout';
 
 const StyledPortfolio = styled.main`
   width: 100%;
