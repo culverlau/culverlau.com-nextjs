@@ -15,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const StyledLayout = styled.div`
+  padding: 0px 0 50px;
+
   footer {
     width: 100%;
     height: 100px;
