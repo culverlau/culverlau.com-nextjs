@@ -1,0 +1,10 @@
+- title: "Jeannotte's Market Mobile App",
+  link: "https://github.com/PearlMarketing/jeannottes-app",
+  image: "",
+  bullet: |
+  [
+    "React Native (Expo-based)",
+    "Mobx State Tree for state management",
+    "Wordpress REST API through AWS API Gateway",
+    "Developed to compliment the Jeannotte's Market website's online ordering"
+  ]
