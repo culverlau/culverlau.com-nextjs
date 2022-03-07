@@ -71,7 +71,7 @@ const Home = () => {
           {/* <h1 className='title'>Culver Lau</h1> */}
 
           <div className='headshot'>
-            <Image src={headshotPic} />
+            <Image src={headshotPic} width="300" height="300" />
           </div>
 
           <p className='description'>
