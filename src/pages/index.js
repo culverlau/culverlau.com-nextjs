@@ -102,7 +102,7 @@ const Home = () => {
             In addition to his experience with technology, Culver has extensive
             experience behind the lens. Culver&apos;s first foray in photography
             began as a teenager with his father&apos;s 70s Fujica film camera. Over
-            the years, he has sought to capture scenes from across North America.
+            the years, he has sought to capture scenes from across America.
           </p>
         </div>
 
