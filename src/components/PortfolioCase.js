@@ -43,7 +43,7 @@ const PortfolioCase = ({ image, title, link, children }) => {
           </div>
         )} */}
       <div className='content'>
-        <a href={link} target='_blank' data-tip data-for={hoverId}>
+        <a href={link} target='_blank' rel="noreferrer" data-tip data-for={hoverId}>
           <span className='title'>{title}</span>
         </a>
         <div>{children}</div>

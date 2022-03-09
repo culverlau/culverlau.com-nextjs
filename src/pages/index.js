@@ -33,6 +33,8 @@ const StyledHome = styled.main`
   margin: 0 auto;
   padding: 0 20px;
 
+  /* color: ${({ theme }) => theme.colors.primary}; */
+
   .headshot {
     height: 300px;
     width: 300px;
@@ -71,14 +73,14 @@ const Home = () => {
           {/* <h1 className='title'>Culver Lau</h1> */}
 
           <div className='headshot'>
-            <Image src={headshotPic} width="300" height="300" />
+            <Image src={headshotPic} width="300" height="300" alt="Portrait of Culver Lau" />
           </div>
 
           <p className='description'>
             <b>Culver Lau</b> is a multi-disciplinary front-end developer,
             designer, photographer, brand consultant and entrepreneur based in
             New York City. As the former Director of Website Development at{' '}
-            <a href='https://www.pearlmarketing.com/' target='_blank'>
+            <a href='https://www.pearlmarketing.com/' target='_blank' rel="noreferrer">
               Pearl Marketing
             </a>
             , a boutique digital agency serving Northern New England, Culver was
@@ -98,8 +100,8 @@ const Home = () => {
           </p>
           <p>
             In addition to his experience with technology, Culver has extensive
-            experience behind the lens. Culver's first foray in photography
-            began as a teenager with his father's 70s Fujica film camera. Over
+            experience behind the lens. Culver&apos;s first foray in photography
+            began as a teenager with his father&apos;s 70s Fujica film camera. Over
             the years, he has sought to capture scenes from across America.
           </p>
         </div>
@@ -114,7 +116,7 @@ const Home = () => {
               <figcaption>
                 —Glynn Bingham,{' '}
                 <cite>
-                  <a href='https://youtu.be/AENtuwGs-vI' target='_blank'>
+                  <a href='https://youtu.be/AENtuwGs-vI' target='_blank' rel="noreferrer">
                     Owner at Jeannottes Market
                   </a>
                 </cite>
@@ -138,9 +140,9 @@ const Home = () => {
               <li>
                 Developed to compliment the{' '}
                 <a href='https://www.jeannottesmarket.com/'>
-                  Jeannotte's Market
+                  Jeannotte&apos;s Market
                 </a>{' '}
-                website's online ordering
+                website&apos;s online ordering
               </li>
             </ul>
           </PortfolioCase>

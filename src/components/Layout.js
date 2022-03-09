@@ -1,18 +1,6 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import Navigation from './Navigation';
-
-const GlobalStyle = createGlobalStyle`
-  html {
-    font-size: 18px;
-    line-height: 1.2rem;
-    ${'' /* font-family: '-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */}
-    font-family: 'Work Sans', sans-serif;
-  }
-  ul {
-    margin: 0;
-  }
-`;
 
 const StyledLayout = styled.div`
   padding: 0px 0 50px;
@@ -40,7 +28,6 @@ const StyledLayout = styled.div`
 const Layout = ({ children }) => {
   return (
     <>
-      <GlobalStyle />
       <StyledLayout>
         <Navigation />
         {children}

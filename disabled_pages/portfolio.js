@@ -30,7 +30,7 @@ const Portfolio = () => {
           <b>Culver Lau</b> is a multi-disciplinary front-end developer,
           designer, photographer, brand consultant and entrepreneur based in New
           York City. As the former Director of Website Development at{' '}
-          <a href='https://www.pearlmarketing.com/' target='_blank'>
+          <a href='https://www.pearlmarketing.com/' target='_blank' rel="noreferrer">
             Pearl Marketing
           </a>
           , a boutique digital agency serving Northern New England, Culver was a

@@ -14,14 +14,14 @@ const Navigation = () => {
     <StyledNavigation>
         <a
           href='https://www.linkedin.com/in/culverlau/'
-          target='_blank'
+          target='_blank' rel="noreferrer"
           // onClick="gtagEvent('Social', 'LinkedIn')"
         >
           LinkedIn
         </a>
         <a
           href='https://www.instagram.com/culversphotos/'
-          target='_blank'
+          target='_blank' rel="noreferrer"
           // onClick="gtagEvent('Social', 'Instagram')"
         >
           Instagram
