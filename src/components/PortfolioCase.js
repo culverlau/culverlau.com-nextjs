@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
 import dynamic from 'next/dynamic'
+import amplitude from 'amplitude-js';
 
 const ReactTooltip = dynamic(() => import('react-tooltip'), {
   ssr: false,
@@ -24,7 +25,8 @@ const StyledPortfolioCase = styled.div`
     opacity: 1;
     margin: 0;
     padding: 0;
-    &::before, &::after {
+    &::before,
+    &::after {
       display: none;
     }
   }
@@ -34,6 +36,13 @@ const StyledPortfolioCase = styled.div`
 `
 
 const PortfolioCase = ({ image, title, link, children }) => {
+  const handleClick = (event, eventProperties) => {
+    amplitude.getInstance().logEvent(event, eventProperties)
+  }
+  var eventProperties = {
+    'Portfolio Name': title,
+  }
+
   const hoverId = title.replace(/[^a-z0-9]/gi, '')
   return (
     <StyledPortfolioCase>
@@ -43,7 +52,14 @@ const PortfolioCase = ({ image, title, link, children }) => {
           </div>
         )} */}
       <div className='content'>
-        <a href={link} target='_blank' rel="noreferrer" data-tip data-for={hoverId}>
+        <a
+          href={link}
+          target='_blank'
+          rel='noreferrer'
+          data-tip
+          data-for={hoverId}
+          onClick={() => handleClick('Clicked Portfolio Link', eventProperties)}
+        >
           <span className='title'>{title}</span>
         </a>
         <div>{children}</div>
@@ -57,7 +73,13 @@ const PortfolioCase = ({ image, title, link, children }) => {
           effect='float'
         >
           <div className='tooltip'>
-            <Image src={image} alt={title} width='960' height='679' placeholder="blur" />
+            <Image
+              src={image}
+              alt={title}
+              width='960'
+              height='679'
+              placeholder='blur'
+            />
           </div>
         </ReactTooltip>
       )}

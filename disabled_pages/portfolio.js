@@ -20,7 +20,6 @@ const Portfolio = () => {
     <Layout>
       <Head>
         <title>Culver Lau</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <StyledPortfolio>

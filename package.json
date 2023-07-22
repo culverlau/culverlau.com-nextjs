@@ -5,19 +5,27 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest"
   },
   "dependencies": {
+    "amplitude-js": "^8.17.0",
+    "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-tooltip": "^4.2.21",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
     "sharp": "^0.30.2",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
     "babel-plugin-styled-components": "^2.0.6",
     "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0"
+    "eslint-config-next": "12.1.0",
+    "jest": "^27.5.1"
   }
 }

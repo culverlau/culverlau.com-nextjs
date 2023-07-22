@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
@@ -29,10 +30,6 @@ import toddsTreeImage from '../../public/images/portfolio/todds_tree.png'
 import mmCruisesImage from '../../public/images/portfolio/mm_cruises.png'
 
 const StyledHome = styled.main`
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 0 20px;
-
   /* color: ${({ theme }) => theme.colors.primary}; */
 
   .headshot {
@@ -65,7 +62,6 @@ const Home = () => {
     <Layout>
       <Head>
         <title>Culver Lau</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <StyledHome>
